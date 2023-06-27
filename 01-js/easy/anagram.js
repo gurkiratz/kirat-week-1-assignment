@@ -7,8 +7,11 @@
   - `npm run test-anagram`
 */
 
+// const mySort = (str) => {
+//   return str.toLowerCase().replace(/\s/g, '').split('').sort().join('');
+// };
 const mySort = (str) => {
-  return str.toLowerCase().replace(/\s/g, '').split('').sort().join('');
+  return str.toLowerCase().split('').sort().join('');
 };
 
 function isAnagram(str1, str2) {
@@ -19,5 +22,7 @@ function isAnagram(str1, str2) {
 
   return sortedStr1 === sortedStr2;
 }
+
+console.log(isAnagram('DebitCard', 'BadCredit'));
 
 module.exports = isAnagram;
